@@ -4,7 +4,7 @@ namespace Example.Services;
 
 public interface IMusicService
 {
-    public Song Play(Song song);
-    public Song Stop(Song song);
-    public Song Pause(Song song);
+    public void Play(Song song);
+    public void Stop(Song song);
+    public void Pause(Song song);
 }

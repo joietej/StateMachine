@@ -36,9 +36,9 @@ var service = host.Services.GetRequiredService<IMusicService>();
 
 var song = new Song("foo");
 
-song = service.Play(song);
-song = service.Pause(song);
-song = service.Stop(song);
+service.Play(song);
+service.Pause(song);
+service.Stop(song);
 
 
 await host.RunAsync();

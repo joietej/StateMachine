@@ -4,4 +4,15 @@ using StateMachine.Interfaces;
 
 namespace Example.Models;
 
-public record Song(string Name, MusicState CurrentState = MusicState.Idle) : Entity<MusicState>(CurrentState);
+public class Song : IEntity<MusicState>
+{
+    public Song(string name, MusicState currentState = MusicState.Idle)
+    {
+        this.Name = name;
+        this.CurrentState = currentState;
+    }
+
+    public string Name { get; }
+    public MusicState CurrentState { get; set; }
+    
+}

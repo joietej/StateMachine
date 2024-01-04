@@ -14,18 +14,18 @@ public class MusicService : IMusicService
         _stateMachineRuntime = stateMachineRuntime;
     }
 
-    public Song Play(Song song)
+    public void Play(Song song)
     {
-        return (Song) _stateMachineRuntime.Execute(song, MusicEvent.Play);
+        _stateMachineRuntime.Execute(song, MusicEvent.Play);
     }
 
-    public Song Stop(Song song)
+    public void Stop(Song song)
     {
-        return (Song) _stateMachineRuntime.Execute(song, MusicEvent.Stop);
+        _stateMachineRuntime.Execute(song, MusicEvent.Stop);
     }
 
-    public Song Pause(Song song)
+    public void Pause(Song song)
     {
-        return (Song) _stateMachineRuntime.Execute(song, MusicEvent.Pause);
+        _stateMachineRuntime.Execute(song, MusicEvent.Pause);
     }
 }

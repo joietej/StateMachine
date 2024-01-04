@@ -16,7 +16,7 @@ public class StateMachineRuntime<TState, TEvent> : IStateMachineRuntime<TState, 
         _stateMachine = stateMachine;
     }
 
-    public Entity<TState> Execute(Entity<TState> entity, TEvent @event)
+    public IEntity<TState> Execute(IEntity<TState> entity, TEvent @event)
     {
         var tran = _stateMachine.GetNext(@event);
         if (tran == null) return entity;
@@ -33,6 +33,8 @@ public class StateMachineRuntime<TState, TEvent> : IStateMachineRuntime<TState, 
             _stateMachine.MoveNext(tran);
         }
 
-        return entity with {CurrentState = _stateMachine.Current};
+        entity.CurrentState = _stateMachine.Current;
+
+        return entity;
     }
 }
