@@ -1,4 +1,4 @@
-namespace StateMachine;
+namespace StateMachine.Oops;
 
 public class StateTransition<TState, TEvent> where TState : struct
     where TEvent : struct
@@ -21,5 +21,4 @@ public class StateTransition<TState, TEvent> where TState : struct
     public TEvent Event { get; }
     public bool IsFirst { get; }
     public bool IsLast { get; }
-    
 }

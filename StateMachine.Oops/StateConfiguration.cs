@@ -1,6 +1,6 @@
-using StateMachine.Interfaces;
+using StateMachine.Oops.Interfaces;
 
-namespace StateMachine;
+namespace StateMachine.Oops;
 
 public class StateConfiguration<TState, TEvent> : IStateConfiguration<TState, TEvent>
     where TState : struct

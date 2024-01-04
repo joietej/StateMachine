@@ -1,9 +1,7 @@
-using Example.Models;
-using StateMachine;
-using StateMachine.Example;
-using StateMachine.Interfaces;
+using StateMachine.Oops.Example.Models;
+using StateMachine.Oops.Interfaces;
 
-namespace Example.Services;
+namespace StateMachine.Oops.Example.Services;
 
 public class MusicService : IMusicService
 {

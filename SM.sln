@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMachine", "StateMachine\StateMachine.csproj", "{F3EEDE10-320D-4FE9-9824-0C96C612714D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMachine.Oops", "StateMachine.Oops\StateMachine.Oops.csproj", "{F3EEDE10-320D-4FE9-9824-0C96C612714D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{C39CA922-A067-4A71-AFA4-28671677F727}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMachine.Oops.Example", "StateMachine.Oops.Example\StateMachine.Oops.Example.csproj", "{C39CA922-A067-4A71-AFA4-28671677F727}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

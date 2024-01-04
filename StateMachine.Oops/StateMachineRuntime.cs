@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
-using StateMachine.Interfaces;
+using StateMachine.Oops.Interfaces;
 
-namespace StateMachine;
+namespace StateMachine.Oops;
 
 public class StateMachineRuntime<TState, TEvent> : IStateMachineRuntime<TState, TEvent>
     where TState : struct

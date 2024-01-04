@@ -1,13 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using System.Reflection;
-using Example.Models;
-using Example.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using StateMachine;
-using StateMachine.Example;
-using StateMachine.Interfaces;
+using StateMachine.Oops;
+using StateMachine.Oops.Example.Models;
+using StateMachine.Oops.Example.Services;
+using StateMachine.Oops.Interfaces;
 
 var host = Host
     .CreateDefaultBuilder()

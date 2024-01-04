@@ -1,7 +1,7 @@
-using Example.Models;
-using StateMachine;
-using StateMachine.Example;
-using StateMachine.Interfaces;
+using StateMachine.Oops;
+using StateMachine.Oops.Example;
+using StateMachine.Oops.Example.Models;
+using StateMachine.Oops.Interfaces;
 
 namespace Example.Commands;
 

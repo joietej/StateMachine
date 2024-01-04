@@ -1,17 +1,15 @@
-using Example.Models;
-using StateMachine;
-using StateMachine.Example;
-using StateMachine.Interfaces;
+using StateMachine.Oops.Example.Models;
+using StateMachine.Oops.Interfaces;
 
 namespace Example.Commands;
 
-public class PauseCommand : ICommand<MusicState, MusicEvent>
+public class StopCommand : ICommand<MusicState, MusicEvent>
 {
     public bool Execute(IEntity<MusicState> entity, MusicEvent @event)
     {
         if (entity is Song song)
         {
-            Console.WriteLine($"Pausing {song.Name}");
+            Console.WriteLine($"Stopping {song.Name}");
         }
 
         return true;
@@ -19,7 +17,8 @@ public class PauseCommand : ICommand<MusicState, MusicEvent>
 
     public bool IsValid(IEntity<MusicState> entity, MusicEvent @event) => (entity.CurrentState, @event) switch
     {
-        (MusicState.Running, MusicEvent.Pause) => true,
+        (MusicState.Running, MusicEvent.Stop) => true,
+        (MusicState.Paused, MusicEvent.Stop) => true,
         _ => false
     };
 }

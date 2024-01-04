@@ -1,4 +1,4 @@
-namespace StateMachine.Interfaces;
+namespace StateMachine.Oops.Interfaces;
 
 public interface IEntity<TState> where TState : struct
 {
